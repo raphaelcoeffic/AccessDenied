@@ -8,7 +8,7 @@ static const uint8_t mask[] = {
 
 static const char key[] = "403 AccessDenied";
 
-#define AD_KEYLEN sizeof(key)
+#define AD_KEYLEN (sizeof(key)-1)
 
 uint8_t access_denied(uint8_t mode, const uint8_t * input, uint8_t * output)
 {
